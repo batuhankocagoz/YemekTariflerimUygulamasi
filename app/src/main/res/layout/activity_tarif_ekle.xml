@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarifEkleActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_view">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarif Ekle"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:onClick="fotografEkle"
+        android:src="@drawable/baseline_add_a_photo_24">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/tarifAdi"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/baseline_food_bank_24"
+        android:drawablePadding="7dp"
+        android:hint="Tarif Adı"
+        android:paddingLeft="10dp"></EditText>
+
+    <EditText
+        android:id="@+id/tarifMalzeme"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/baseline_format_list_numbered_24"
+        android:drawablePadding="7dp"
+        android:hint="Malzemeler"
+        android:paddingLeft="10dp"></EditText>
+
+    <EditText
+        android:id="@+id/tarifYapilis"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/baseline_description_24"
+        android:drawablePadding="7dp"
+        android:hint="Yapılış"
+        android:paddingLeft="10dp"></EditText>
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttonbackground"
+        android:onClick="tarifKaydet"
+        android:text="Ekle"
+        android:textColor="@color/white"
+        android:textSize="18sp"></Button>
+
+
+</RelativeLayout>
